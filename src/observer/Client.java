@@ -13,7 +13,7 @@ public class Client {
 		Observer observer2 = new ConcreteObserver();
 		subject.add(observer1);
 		subject.add(observer2);
-		subject.notice();
+		subject.change();
 	}
 
 }
