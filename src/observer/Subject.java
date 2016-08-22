@@ -17,4 +17,9 @@ public abstract class Subject {
 		observers.remove(o);
 	}
 	public abstract void notice();
+	
+	public void change(){
+		System.out.println("改变");
+		this.notice();
+	}
 }

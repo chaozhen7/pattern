@@ -5,7 +5,7 @@ package singleton;
  * @version 1.0
  */
 public class InnerSingleton {
-	public InnerSingleton getInstance(){
+	public static InnerSingleton getInstance(){
 		return Holder.INSTANCE;
 	}
 	private static class Holder{

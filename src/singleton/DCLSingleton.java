@@ -9,7 +9,7 @@ public class DCLSingleton {
 	private DCLSingleton(){
 		
 	}
-	public DCLSingleton getInstance(){
+	public static DCLSingleton getInstance(){
 		if(INSTANCE == null){
 			synchronized (DCLSingleton.class) {
 				if(INSTANCE == null){
