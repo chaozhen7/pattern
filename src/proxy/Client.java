@@ -17,6 +17,12 @@ public class Client {
 		System.out.println("Cglib动态代理");
 		ProxyInterface cglibReal = (ProxyInterface) new CglibProxy().getInstance(new RealClass());
 		cglibReal.func();
+		System.out.println("JDK动态代理2");
+		jdkReal = new JDKProxy2(new RealClass()).getInstance();	//没有强制类型转换
+		jdkReal.func();
+		System.out.println("Cglib动态代理2");
+		cglibReal = new CglibProxy2().getInstance(new RealClass());	//没有强制类型转换
+		cglibReal.func();
 	}
 
 }
