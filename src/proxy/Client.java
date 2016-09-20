@@ -23,6 +23,9 @@ public class Client {
 		System.out.println("Cglib动态代理2");
 		cglibReal = new CglibProxy2().getInstance(new RealClass());	//没有强制类型转换
 		cglibReal.func();
+		System.out.println("Cglib动态代理3");
+		cglibReal = CglibProxy3.getInstance().getProxy(RealClass.class);
+		cglibReal.func();
 	}
 
 }
